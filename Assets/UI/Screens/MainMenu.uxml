@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/layout.uss?fileID=7433441132597879392&amp;guid=c006db9b078f3a748a76a9972d204bf3&amp;type=3#layout"/>
+    <Style src="project://database/Assets/UI/Styles/tokens.uss?fileID=7433441132597879392&amp;guid=693df1dd4c5a3cd40bbfa7ffaceb327f&amp;type=3#tokens"/>
+    <Style src="project://database/Assets/UI/Styles/typography.uss?fileID=7433441132597879392&amp;guid=60692313706a1c047bc02ea5d8e59c2e&amp;type=3#typography"/>
+    <Style src="project://database/Assets/UI/Styles/inputs.uss?fileID=7433441132597879392&amp;guid=8fcaa562fc439284f971665d1a35b38b&amp;type=3#inputs"/>
+    <Style src="project://database/Assets/UI/Styles/buttons.uss?fileID=7433441132597879392&amp;guid=79ce70253ea5d6e44a00e4ad025ff8cd&amp;type=3#buttons"/>
+    <ui:VisualElement/>
+</ui:UXML>

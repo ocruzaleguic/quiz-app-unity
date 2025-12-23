@@ -1,12 +1,13 @@
 .h1 {
   font-size: var(--font-xl);
-  unity-font-style: bold;
+  -unity-font-style: bold;
   color: var(--color-text-primary);
+  -unity-text-align: middle-center;
 }
 
 .h2 {
   font-size: var(--font-lg);
-  unity-font-style: bold;
+  -unity-font-style: bold;
   color: var(--color-text-primary);
 }
 

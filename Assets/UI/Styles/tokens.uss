@@ -23,7 +23,7 @@
     --color-text-inverse: #ffffff;
   
     /* Font */
-    --font-primary: resource("Fonts/InterVariable.ttf");
+    --font-primary: resource("Fonts/InterVariable");
 
 
     /* ========== STATUS ============================= */

@@ -2,53 +2,86 @@
   -unity-font: var(--font-primary);
 }
 
+/* =========================
+   DIRECTION
+   ========================= */
 
-/* ========== DIRECTION ====================== */
+.row {
+  flex-direction: row;
+}
 
-.row { flex-direction: row; }
-.column { flex-direction: column; }
+.column {
+  flex-direction: column;
+}
 
-/* ========== ALIGNMENT ====================== */
+/* =========================
+   ALIGNMENT
+   ========================= */
 
 .center {
   justify-content: center;
   align-items: center;
 }
 
-.align-center { align-items: center; }
-.justify-between { justify-content: space-between; }
+.align-center {
+  align-items: center;
+}
 
+.justify-between {
+  justify-content: space-between;
+}
 
-/* ========== FILL Y SIZING ================== */
+/* =========================
+   FILL & SIZING
+   ========================= */
 
-.fill { flex-grow: 1; }
-.w-100 { width: 100%; }
-
-
-/* ========== WIDTH HELPERS ================== */
+.fill {
+  flex-grow: 1;
+}
 
 .w-100 {
   width: 100%;
 }
 
-/* ========== GAP HELPERS (VERTICAL) ========== */
+/* =========================
+   GAP HELPERS (compatible USS)
+   Nota: sin :last-child (no soportado)
+   Solución: al último hijo ponle class="mb-0"
+   ========================= */
 
-.gap-xs > * { margin-bottom: var(--space-xs); }
-.gap-sm > * { margin-bottom: var(--space-sm); }
-.gap-md > * { margin-bottom: var(--space-md); }
-.gap-lg > * { margin-bottom: var(--space-lg); }
+.gap-xs > * {
+  margin-bottom: var(--space-xs);
+}
 
-.gap-xs > *:last-child,
-.gap-sm > *:last-child,
-.gap-md > *:last-child,
-.gap-lg > *:last-child {
+.gap-sm > * {
+  margin-bottom: var(--space-sm);
+}
+
+.gap-md > * {
+  margin-bottom: var(--space-md);
+}
+
+.gap-lg > * {
+  margin-bottom: var(--space-lg);
+}
+
+/* Utility para anular margen (ponlo en el último elemento) */
+.mb-0 {
   margin-bottom: 0;
 }
 
-/* Estira hijos horizontalmente (full-width real en móvil) */
-.stretch { align-items: stretch; }
+/* =========================
+   STRETCH
+   ========================= */
 
-/* Contenedor de pantalla móvil: ocupa toda el área y da padding consistente */
+.stretch {
+  align-items: stretch;
+}
+
+/* =========================
+   SCREEN CONTAINER
+   ========================= */
+
 .screen {
   padding: var(--space-xl);
   width: 100%;

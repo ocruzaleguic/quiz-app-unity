@@ -1,0 +1,51 @@
+/* =========================
+   TextField (contenedor)
+   ========================= */
+
+.input {
+  min-height: 56px;
+
+  /* IMPORTANTE: el padding NO aquí, porque crea “doble caja” */
+  padding-left: 0;
+  padding-right: 0;
+
+  border-radius: var(--radius-sm);
+  border-width: 1px;
+  border-color: var(--color-border);
+
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+/* =========================
+   Caja interna real (name: #unity-text-input)
+   ========================= */
+
+.input > #unity-text-input {
+  /* aquí va el padding del texto */
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+
+  background-color: rgba(0, 0, 0, 0);
+
+  /* quitar borde negro interno */
+  border-width: 0;
+  border-color: rgba(0, 0, 0, 0);
+
+  
+}
+
+/* Texto interno (por si el fondo/borde viene del TextElement) */
+.input > #unity-text-input > .unity-text-element {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Placeholder */
+.input #unity-placeholder {
+  color: var(--color-text-secondary);
+}
+
+/* Focus en el contenedor */
+.input:focus {
+  border-color: var(--color-primary);
+}

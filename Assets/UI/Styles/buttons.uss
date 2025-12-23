@@ -1,6 +1,10 @@
-/* ===== Base ============ */
+/* =========================
+   BASE BUTTON
+   ========================= */
+
 .btn {
   min-height: 64px;
+
   padding-left: var(--space-xl);
   padding-right: var(--space-xl);
 
@@ -10,11 +14,10 @@
   justify-content: center;
   align-items: center;
 
-  transition-property: scale, background-color, border-color, opacity;
+  transition-property: scale, opacity;
   transition-duration: 0.08s;
   transition-timing-function: ease-out;
 }
-
 
 .btn:hover {
   scale: 1.03;
@@ -22,22 +25,28 @@
 
 .btn:active {
   scale: 1.06;
-  opacity: 0.98;
+  opacity: 0.92;
 }
-
-.btn__label {
-  font-size: var(--font-lg);          /* o sube un valor fijo: 18px */
-  unity-font-style: bold;
-  -unity-text-align: middle-center;   /* centrado seguro */
-}
-
 
 /* =========================
-   Primary (Azul)
+   LABEL
    ========================= */
+
+.btn__label {
+  font-size: var(--font-lg);
+  unity-font-style: bold;
+  -unity-text-align: middle-center;
+}
+
+/* =========================
+   PRIMARY
+   ========================= */
+
 .btn--primary {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
+
+  transition-property: scale, opacity, background-color, border-color;
 }
 
 .btn--primary > .btn__label {
@@ -49,16 +58,15 @@
   border-color: var(--color-primary-hover);
 }
 
-.btn--primary:active {
-  opacity: 0.92;
-}
-
 /* =========================
-   Accent (Naranja)
+   ACCENT
    ========================= */
+
 .btn--accent {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
+
+  transition-property: scale, opacity, background-color, border-color;
 }
 
 .btn--accent > .btn__label {
@@ -70,15 +78,12 @@
   border-color: var(--color-accent-hover);
 }
 
-.btn--accent:active {
-  opacity: 0.92;
-}
-
 /* =========================
-   Outline (borde azul)
+   OUTLINE
    ========================= */
+
 .btn--outline {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border-color: var(--color-primary);
 }
 
@@ -90,15 +95,22 @@
   background-color: var(--color-surface);
 }
 
-.btn--outline:active {
-  opacity: 0.92;
+/* Mantener borde estable (anti-flicker) */
+.btn--outline,
+.btn--outline:hover,
+.btn--outline:active,
+.btn--outline:focus,
+.btn--outline:disabled {
+  border-width: 1px;
+  border-color: var(--color-primary);
 }
 
 /* =========================
-   Ghost (sin borde)
+   GHOST
    ========================= */
+
 .btn--ghost {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border-width: 0;
 }
 
@@ -110,13 +122,20 @@
   background-color: var(--color-surface);
 }
 
-.btn--ghost:active {
-  opacity: 0.92;
+/* Mantener ghost SIN borde (anti-flicker) */
+.btn--ghost,
+.btn--ghost:hover,
+.btn--ghost:active,
+.btn--ghost:focus,
+.btn--ghost:disabled {
+  border-width: 0;
+  border-color: transparent;
 }
 
 /* =========================
-   Disabled
+   DISABLED
    ========================= */
+
 .btn:disabled {
   opacity: 0.55;
 }

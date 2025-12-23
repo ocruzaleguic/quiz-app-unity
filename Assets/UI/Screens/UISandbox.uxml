@@ -11,12 +11,44 @@
     <Style src="project://database/Assets/UI/Styles/layout.uss?fileID=7433441132597879392&amp;guid=c006db9b078f3a748a76a9972d204bf3&amp;type=3#layout"/>
     <Style src="project://database/Assets/UI/Styles/buttons.uss?fileID=7433441132597879392&amp;guid=79ce70253ea5d6e44a00e4ad025ff8cd&amp;type=3#buttons"/>
     <Style src="project://database/Assets/UI/Styles/typography.uss?fileID=7433441132597879392&amp;guid=60692313706a1c047bc02ea5d8e59c2e&amp;type=3#typography"/>
+    <Style src="project://database/Assets/UI/Styles/inputs.uss?fileID=7433441132597879392&amp;guid=8fcaa562fc439284f971665d1a35b38b&amp;type=3#inputs"/>
 
     <ui:VisualElement name="root" class="column gap-lg w-100 fill stretch screen">
        
-        <ui:VisualElement class="column gap-md w-100">
-          
-            <ui:Label text="Sandbox - Buttons" class="h1" />
+        <ui:Label name="LoginText" text="Inicie Sesión" class="h1" />
+
+        <ui:VisualElement name="LoginInputs" class="column gap-md w-100">
+
+            <!-- EMAIL -->
+            <ui:VisualElement name="EmailInput" class="column gap-xs w-100">
+                <ui:Label
+                    text="Correo electrónico"
+                    class="input__label" />
+
+                <ui:TextField
+                    name="emailInput"
+                    class="input input--text w-100"
+                    placeholder-text="correo@ejemplo.com"
+                    is-delayed="false" />
+            </ui:VisualElement>
+
+            <!-- PASSWORD -->
+            <ui:VisualElement name="PasswordInput" class="column gap-xs w-100">
+                <ui:Label
+                    text="Contraseña"
+                    class="input__label" />
+
+                <ui:TextField
+                    name="passwordInput"
+                    class="input input--password w-100"
+                    placeholder-text="••••••••"
+                    is-password-field="true"
+                    is-delayed="false" />
+            </ui:VisualElement>
+
+        </ui:VisualElement> 
+
+        <ui:VisualElement name="LoginButtons" class="column gap-md w-100">
           
             <ui:Button name="primaryBtn" class="btn btn--primary w-100">
                 <ui:Label text="Continuar (Primary)" class="btn__label"/>
