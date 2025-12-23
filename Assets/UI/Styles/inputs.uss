@@ -1,6 +1,4 @@
-/* =========================
-   TextField (contenedor)
-   ========================= */
+/* TextField (contenedor) */
 
 .input {
   min-height: 56px;
@@ -24,9 +22,7 @@
 }
 
 
-/* =========================
-   Caja interna real (name: #unity-text-input)
-   ========================= */
+/* Caja interna real (name: #unity-text-input) */
 
 .input > #unity-text-input {
   /* aquí va el padding del texto */

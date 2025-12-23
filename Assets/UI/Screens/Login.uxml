@@ -14,7 +14,7 @@
 
     <!-- Root -->
 
-    <ui:VisualElement name="root" class="column gap-lg w-100 fill stretch screen">
+    <ui:VisualElement name="root" class="column gap-lg w-100 fill stretch screen space-evenly">
 
         <!-- Título -->
         <ui:Label name="LoginText" text="Inicie Sesión" class="h1"/>

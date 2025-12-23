@@ -1,90 +1,67 @@
 :root {
-  -unity-font: var(--font-primary);
+    -unity-font: var(--font-primary);
 }
 
-/* =========================
-   DIRECTION
-   ========================= */
-
 .row {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
-/* =========================
-   ALIGNMENT
-   ========================= */
-
 .center {
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .align-center {
-  align-items: center;
+    align-items: center;
 }
 
 .justify-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
-/* =========================
-   FILL & SIZING
-   ========================= */
-
 .fill {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .w-100 {
-  width: 100%;
+    width: 100%;
 }
 
-/* =========================
-   GAP HELPERS (compatible USS)
-   Nota: sin :last-child (no soportado)
-   Solución: al último hijo ponle class="mb-0"
-   ========================= */
-
 .gap-xs > * {
-  margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-xs);
 }
 
 .gap-sm > * {
-  margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-sm);
 }
 
 .gap-md > * {
-  margin-bottom: var(--space-md);
+    margin-bottom: var(--space-md);
 }
 
 .gap-lg > * {
-  margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-lg);
 }
 
-/* Utility para anular margen (ponlo en el último elemento) */
 .mb-0 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
-
-/* =========================
-   STRETCH
-   ========================= */
 
 .stretch {
-  align-items: stretch;
+    align-items: stretch;
 }
 
-/* =========================
-   SCREEN CONTAINER
-   ========================= */
-
 .screen {
-  padding: var(--space-xl);
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-bg);
+    padding: var(--space-xl);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg);
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
