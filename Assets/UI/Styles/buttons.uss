@@ -1,0 +1,122 @@
+/* ===== Base ============ */
+.btn {
+  min-height: 64px;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
+
+  border-radius: var(--radius-md);
+  border-width: 1px;
+
+  justify-content: center;
+  align-items: center;
+
+  transition-property: scale, background-color, border-color, opacity;
+  transition-duration: 0.08s;
+  transition-timing-function: ease-out;
+}
+
+
+.btn:hover {
+  scale: 1.03;
+}
+
+.btn:active {
+  scale: 1.06;
+  opacity: 0.98;
+}
+
+.btn__label {
+  font-size: var(--font-lg);          /* o sube un valor fijo: 18px */
+  unity-font-style: bold;
+  -unity-text-align: middle-center;   /* centrado seguro */
+}
+
+
+/* =========================
+   Primary (Azul)
+   ========================= */
+.btn--primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--primary > .btn__label {
+  color: var(--color-text-inverse);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.btn--primary:active {
+  opacity: 0.92;
+}
+
+/* =========================
+   Accent (Naranja)
+   ========================= */
+.btn--accent {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn--accent > .btn__label {
+  color: var(--color-text-inverse);
+}
+
+.btn--accent:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+.btn--accent:active {
+  opacity: 0.92;
+}
+
+/* =========================
+   Outline (borde azul)
+   ========================= */
+.btn--outline {
+  background-color: transparent;
+  border-color: var(--color-primary);
+}
+
+.btn--outline > .btn__label {
+  color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-surface);
+}
+
+.btn--outline:active {
+  opacity: 0.92;
+}
+
+/* =========================
+   Ghost (sin borde)
+   ========================= */
+.btn--ghost {
+  background-color: transparent;
+  border-width: 0;
+}
+
+.btn--ghost > .btn__label {
+  color: var(--color-primary);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-surface);
+}
+
+.btn--ghost:active {
+  opacity: 0.92;
+}
+
+/* =========================
+   Disabled
+   ========================= */
+.btn:disabled {
+  opacity: 0.55;
+}

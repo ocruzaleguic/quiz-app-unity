@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/tokens.uss?fileID=7433441132597879392&amp;guid=693df1dd4c5a3cd40bbfa7ffaceb327f&amp;type=3#tokens"/>
+    <Style src="project://database/Assets/UI/Styles/layout.uss?fileID=7433441132597879392&amp;guid=c006db9b078f3a748a76a9972d204bf3&amp;type=3#layout"/>
+    <Style src="project://database/Assets/UI/Styles/buttons.uss?fileID=7433441132597879392&amp;guid=79ce70253ea5d6e44a00e4ad025ff8cd&amp;type=3#buttons"/>
+    <ui:Button name="button" class="btn btn--primary">
+        <ui:Label name="label" text="Button" class="btn__label"/>
+    </ui:Button>
+</ui:UXML>

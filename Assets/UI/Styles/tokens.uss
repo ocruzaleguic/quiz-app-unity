@@ -1,0 +1,59 @@
+:root {
+
+    /* ========== BRAND (Azul / Naranja) ============= */
+
+    --color-primary: #0d47a1;
+    --color-primary-hover: #1565c0;
+
+    --color-accent: #f57c00;
+    --color-accent-hover: #ef6c00;
+
+
+    /* ========== BACKGROUND / SURFACE =============== */
+
+    --color-bg: #ffffff;
+    --color-surface: #f8fafc;
+    --color-border: #e5e7eb;
+
+
+    /* ========== TEXT =============================== */
+
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+    --color-text-inverse: #ffffff;
+  
+    /* Font */
+    --font-primary: resource("Fonts/InterVariable.ttf");
+
+
+    /* ========== STATUS ============================= */
+
+    --color-success: #16a34a;
+    --color-error: #dc2626;
+
+
+    /* ========== SPACING ============================ */
+
+    --space-2xs: 2px;
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+
+
+    /* ========== RADIUS ============================= */
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+
+
+    /* ========== FONT SIZES ========================= */
+
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 22px;
+    --font-xl: 26px;
+
+}
