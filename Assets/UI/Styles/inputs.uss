@@ -17,6 +17,13 @@
   color: var(--color-text-primary);
 }
 
+/* Mensaje de error */
+.form__error {
+  font-size: var(--font-sm);
+  color: var(--color-error);
+}
+
+
 /* =========================
    Caja interna real (name: #unity-text-input)
    ========================= */

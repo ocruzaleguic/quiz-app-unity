@@ -24,7 +24,7 @@
                 <ui:Label
                     text="Correo electrónico"
                     class="input__label" />
-
+                    
                 <ui:TextField
                     name="emailInput"
                     class="input input--text w-100"
@@ -41,7 +41,7 @@
                 <ui:TextField
                     name="passwordInput"
                     class="input input--password w-100"
-                    placeholder-text="••••••••"
+                    placeholder-text="Contraseña"
                     is-password-field="true"
                     is-delayed="false" />
             </ui:VisualElement>
@@ -50,8 +50,10 @@
 
         <ui:VisualElement name="LoginButtons" class="column gap-md w-100">
           
+            <!-- BOTÓN DE LOGIN -->
+            <ui:Label name="loginError" class="form__error" style="display: none;" />
             <ui:Button name="primaryBtn" class="btn btn--primary w-100">
-                <ui:Label text="Continuar (Primary)" class="btn__label"/>
+                <ui:Label text="Ingresar" class="btn__label"/>
             </ui:Button>
 
             <ui:Button name="accentBtn" class="btn btn--accent w-100">

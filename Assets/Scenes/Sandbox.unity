@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938432551}
   - component: {fileID: 938432550}
+  - component: {fileID: 938432552}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -174,6 +175,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &938432552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938432549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699ff40f3e244954e80a4e9be0646b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoginController
+  uiDocument: {fileID: 0}
+  mainMenuSceneName: MainMenu
 --- !u!1 &1188617987
 GameObject:
   m_ObjectHideFlags: 0
