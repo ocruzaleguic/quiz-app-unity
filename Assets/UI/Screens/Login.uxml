@@ -1,71 +1,70 @@
-<!-- Línea raíz del archivo -->
-<ui:UXML 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:ui="UnityEngine.UIElements" 
-    xmlns:uie="UnityEditor.UIElements"
-    noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" 
-    editor-extension-mode="False">
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
 
-    <!-- Inclusión de estilos -->
+    <!-- Stylesheets -->
+
     <Style src="project://database/Assets/UI/Styles/tokens.uss?fileID=7433441132597879392&amp;guid=693df1dd4c5a3cd40bbfa7ffaceb327f&amp;type=3#tokens"/>
     <Style src="project://database/Assets/UI/Styles/layout.uss?fileID=7433441132597879392&amp;guid=c006db9b078f3a748a76a9972d204bf3&amp;type=3#layout"/>
     <Style src="project://database/Assets/UI/Styles/buttons.uss?fileID=7433441132597879392&amp;guid=79ce70253ea5d6e44a00e4ad025ff8cd&amp;type=3#buttons"/>
     <Style src="project://database/Assets/UI/Styles/typography.uss?fileID=7433441132597879392&amp;guid=60692313706a1c047bc02ea5d8e59c2e&amp;type=3#typography"/>
     <Style src="project://database/Assets/UI/Styles/inputs.uss?fileID=7433441132597879392&amp;guid=8fcaa562fc439284f971665d1a35b38b&amp;type=3#inputs"/>
 
+    <!-- Root -->
+
     <ui:VisualElement name="root" class="column gap-lg w-100 fill stretch screen">
-       
-        <ui:Label name="LoginText" text="Inicie Sesión" class="h1" />
+
+        <!-- Título -->
+        <ui:Label name="LoginText" text="Inicie Sesión" class="h1"/>
+
+        <!-- Inputs -->
 
         <ui:VisualElement name="LoginInputs" class="column gap-md w-100">
 
-            <!-- EMAIL -->
+            <!-- Email -->
             <ui:VisualElement name="EmailInput" class="column gap-xs w-100">
-                <ui:Label
-                    text="Correo electrónico"
-                    class="input__label" />
-                    
-                <ui:TextField
-                    name="emailInput"
-                    class="input input--text w-100"
-                    placeholder-text="correo@ejemplo.com"
-                    is-delayed="false" />
+                <ui:Label text="Correo electrónico" class="input__label"/>
+                <ui:TextField name="emailInput"
+                              placeholder-text="correo@ejemplo.com"
+                              is-delayed="false"
+                              class="input input--text w-100"/>
             </ui:VisualElement>
 
-            <!-- PASSWORD -->
+            <!-- Password -->
             <ui:VisualElement name="PasswordInput" class="column gap-xs w-100">
-                <ui:Label
-                    text="Contraseña"
-                    class="input__label" />
-
-                <ui:TextField
-                    name="passwordInput"
-                    class="input input--password w-100"
-                    placeholder-text="Contraseña"
-                    is-password-field="true"
-                    is-delayed="false" />
+                <ui:Label text="Contraseña" class="input__label"/>
+                <ui:TextField name="passwordInput"
+                              placeholder-text="Contraseña"
+                              is-password-field="true"
+                              is-delayed="false"
+                              class="input input--password w-100"/>
             </ui:VisualElement>
 
-        </ui:VisualElement> 
+        </ui:VisualElement>
+
+        <!-- Buttons -->
 
         <ui:VisualElement name="LoginButtons" class="column gap-md w-100">
-          
-            <!-- BOTÓN DE LOGIN -->
-            <ui:Label name="loginError" class="form__error" style="display: none;" />
+
+            <!-- Error message -->
+            <ui:Label name="loginError" class="form__error" style="display: none;"/>
+
             <ui:Button name="primaryBtn" class="btn btn--primary w-100">
-                <ui:Label text="Ingresar" class="btn__label"/>
+                <ui:Label text="Iniciar sesión" class="btn__label"/>
             </ui:Button>
 
             <ui:Button name="accentBtn" class="btn btn--accent w-100">
-                <ui:Label text="Comprar (Accent)" class="btn__label"/>
+                <ui:Label text="Registrarse" class="btn__label"/>
             </ui:Button>
 
             <ui:Button name="outlineBtn" class="btn btn--outline w-100">
-                <ui:Label text="Crear cuenta (Outline)" class="btn__label"/>
+                <ui:Label text="Recuperar contraseña" class="btn__label"/>
             </ui:Button>
-            
+
             <ui:Button name="ghostBtn" class="btn btn--ghost w-100">
-                <ui:Label text="Omitir (Ghost)" class="btn__label"/>
+                <ui:Label text="Acerca de PMP Tento" class="btn__label"/>
             </ui:Button>
 
         </ui:VisualElement>

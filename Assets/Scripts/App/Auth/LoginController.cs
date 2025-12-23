@@ -22,13 +22,13 @@ public class LoginController : MonoBehaviour
 
         var root = uiDocument.rootVisualElement;
 
-        // Tus names reales (según lo que vienes usando)
+        // Tus names reales (importación de los inputs y botones necesarios)
         _emailInput = root.Q<TextField>("emailInput");
         _passwordInput = root.Q<TextField>("passwordInput");
         _primaryBtn = root.Q<Button>("primaryBtn");
 
-        // El label que agregaste encima del botón
-        _loginError = root.Q<Label>("loginError");
+        // El label que se agregó encima del botón
+        _loginError = root.Q<Label>("loginError");                  
 
         _primaryBtn.clicked += OnLoginClicked;
 
@@ -56,7 +56,7 @@ public class LoginController : MonoBehaviour
             ShowError("Escribe tu contraseña.");
             return;
         }
-
+        // Desactiva botón e inputs para evitar dobles request
         SetBusy(true);
 
         var res = await AuthService.AuthenticateAsync(email, pass);

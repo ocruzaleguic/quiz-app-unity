@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8239a61f7f9b8f4f9dfea3a61e81502
+guid: 2a56d97b285f6a5478874590243ac26e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Inter Variable
+  - Geomanist
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

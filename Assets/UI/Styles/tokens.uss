@@ -23,8 +23,9 @@
     --color-text-inverse: #ffffff;
   
     /* Font */
-    --font-primary: resource("Fonts/InterVariable");
+    --font-primary: resource("Fonts/GeomanistBook");
 
+    
 
     /* ========== STATUS ============================= */
 

@@ -1,22 +1,27 @@
+#root {
+    -unity-font-definition: var(--font-primary);
+    /*-unity-font-definition: resource("Fonts/GeomanistBook");*/
+}
+
 .h1 {
-  font-size: var(--font-xl);
-  -unity-font-style: bold;
-  color: var(--color-text-primary);
-  -unity-text-align: middle-center;
+    font-size: var(--font-xl);
+    -unity-font-style: bold;
+    color: var(--color-text-primary);
+    -unity-text-align: middle-center;
 }
 
 .h2 {
-  font-size: var(--font-lg);
-  -unity-font-style: bold;
-  color: var(--color-text-primary);
+    font-size: var(--font-lg);
+    -unity-font-style: bold;
+    color: var(--color-text-primary);
 }
 
 .body {
-  font-size: var(--font-md);
-  color: var(--color-text-primary);
+    font-size: var(--font-md);
+    color: var(--color-text-primary);
 }
 
 .muted {
-  font-size: var(--font-sm);
-  color: var(--color-text-secondary);
+    font-size: var(--font-sm);
+    color: var(--color-text-secondary);
 }
